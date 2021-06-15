@@ -1,0 +1,20 @@
+<!-- exemplo de Binding de Atributo e de Evento 
+    <p [id]="propLegal">product-create works!</p>
+<button (click)=fazerAlgo() class="button"><i class="material-icons">add</i>Novo Produto</button> -->
+
+<mat-card class="novo-produto">
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price" >
+        </mat-form-field>
+    </form>
+    <button class="button pink" mat-raised-button (click)="createProduct()">Salvar</button>
+    <button class="button" mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>   
+
+<!-- aqui o ngModel está fazendo o two way data binding, ou seja, estamos pegando 
+    os dados do formulário e colocando no backend e esses dados estarão disponíveis no frontend em uma listagem -->
