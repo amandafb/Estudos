@@ -1,12 +1,12 @@
 .button{
-    margin-top: 20px;
-    margin-right: 10px;
+    margin: 20px 15px 0 0;
     line-height: 3rem;
 }
 
 .pink {
     background-color: #eb2164;
 }
+
 .novo-produto{
     background-color: rgb(100, 100, 100);  
 }
@@ -15,4 +15,3 @@ form{
     display: flex;
     flex-direction: column;
 }
-
